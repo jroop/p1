@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Joe Roop - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="http://weloveiconfonts.com/api/?family=zocial"> <!-- social icon set -->
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/modal.js"></script> <!-- some javascript to help with the nav menu -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet"> <!-- font that I found -->
+  </head>
+  <body>
+    <div class="container"> <!-- hold everything and allows us to control overall size -->
+
+      <nav>
+        <div class="nav mobile">
+          <img class="nav-close" onclick="Modal.hide()" src="images/images_src/fixed/nav_close.svg" alt="close nav x">
+          <img class="nav-open"  onclick="Modal.show()" src="images/images_src/fixed/nav_open.svg" alt="open nav stack">
+        </div>
+        <div id="menu">
+          <a href="#" class="menu-item">Main</a>
+          <a href="#" class="menu-item">Blog</a>
+          <a href="#" class="menu-item">Work</a>
+          <a href="#" class="menu-item">😎ther</a>
+        </div>
+      </nav>
+
+      <header>
+        <a href="#">
+          <picture>
+            <img class="logo" src="images/images_src/fixed/jr_logo_300x150.svg" alt="jr designs logo"> <!-- put best image here also default -->
+          </picture>
+        </a>
+        <div class="title-group">
+          <h1 class="title">Joe Roop</h1>
+          <h3 class="sub-title">learning byte-by-byte</h3>
+        </div>
+      </header>
+
+      <div class="row">
+        <picture> <!-- order of sources matters -->
+          <source media="(max-width: 600px)" srcset="images/bay_smallest-600-ar1p5_1x.jpg 1x, images/bay_smallest-1200-ar1p5_2x.jpg 2x">
+          <source media="(max-width: 800px)" srcset="images/bay_small-800-ar3_1x.jpg 1x, images/bay_small-1600-ar3_2x.jpg 2x">
+          <source media="(min-width: 801px)" srcset="images/bay_large-1080-ar3_1x.jpg 1x, images/bay_large-2160-ar3_2x.jpg 2x">
+          <img class="splash" src="images/bay_smallest-600-ar1p5_1x.jpg" alt="splash image displaying coastal Maine.">
+        </picture>
+      </div>
+
+      <section> <!-- main content below -->
+        <div class="row">
+          <h2>Featured Work</h2>
+        </div>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/lady_bug-600-ar1p5_1x.jpg 1x, images/lady_bug-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/lady_bug-375-ar1p5_1x.jpg 1x, images/lady_bug-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/lady_bug-265-ar1p5_1x.jpg 1x, images/lady_bug-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/lady_bug-265-ar1p5_1x.jpg" alt="Lady bug on a spruce tree branch.">
+          </picture>
+          <h2>Lady Bug</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Lady bug that was captured on Spruce tree in Acadia National Park, Maine.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/rock_rope-600-ar1p5_1x.jpg 1x, images/rock_rope-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/rock_rope-375-ar1p5_1x.jpg 1x, images/rock_rope-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/rock_rope-265-ar1p5_1x.jpg 1x, images/rock_rope-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/rock_rope-265-ar1p5_1x.jpg" alt="Climber throwing a rope off the top of a climb.">
+          </picture>
+          <h2>Rope Throw</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Finishing a sport climb and rapping down to clean in California.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/pink_flower-600-ar1p5_1x.jpg 1x, images/pink_flower-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/pink_flower-375-ar1p5_1x.jpg 1x, images/pink_flower-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/pink_flower-265-ar1p5_1x.jpg 1x, images/pink_flower-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/pink_flower-265-ar1p5_1x.jpg" alt="Close up view of a pink flower.">
+          </picture>
+          <h2>Pink Flower</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Flower on the coast of Maine.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/mountain_field-600-ar1p5_1x.jpg 1x, images/mountain_field-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/mountain_field-375-ar1p5_1x.jpg 1x, images/mountain_field-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/mountain_field-265-ar1p5_1x.jpg 1x, images/mountain_field-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/mountain_field-265-ar1p5_1x.jpg" alt="Mountainous field mostly yellow grass with sparse oak trees.">
+          </picture>
+          <h2>East Bay Fields</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Mountainous fields just past East Bay during a helicopter flight test in California.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/path-600-ar1p5_1x.jpg 1x, images/path-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/path-375-ar1p5_1x.jpg 1x, images/path-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/path-265-ar1p5_1x.jpg 1x, images/path-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/path-265-ar1p5_1x.jpg" alt="Green and lush foot path.">
+          </picture>
+          <h2>Path</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Foot path near Sundance Mountain Ski Resort in Utah.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/oh58-600-ar1p5_1x.jpg 1x, images/oh58-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/oh58-375-ar1p5_1x.jpg 1x, images/oh58-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/oh58-265-ar1p5_1x.jpg 1x, images/oh58-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/oh58-265-ar1p5_1x.jpg" alt="Helicopter flying over mountainous fields.">
+          </picture>
+          <h2>OH-58</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>OH-58 helicopter over flying an oak tree in California.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/red_flower-600-ar1p5_1x.jpg 1x, images/red_flower-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/red_flower-375-ar1p5_1x.jpg 1x, images/red_flower-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/red_flower-265-ar1p5_1x.jpg 1x, images/red_flower-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/red_flower-265-ar1p5_1x.jpg" alt="Close up view of a pink flower.">
+          </picture>
+          <h2>Red Flower</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Red flower near the coast of Maine.</p>
+        </article>
+        <article>
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/climber-600-ar1p5_1x.jpg 1x, images/climber-1200-ar1p5_2x.jpg 2x">
+            <source media="(max-width: 800px)" srcset="images/climber-375-ar1p5_1x.jpg 1x, images/climber-750-ar1p5_2x.jpg 2x">
+            <source media="(min-width: 801px)" srcset="images/climber-265-ar1p5_1x.jpg 1x, images/climber-530-ar1p5_2x.jpg 2x">
+            <img class="work" src="images/climber-265-ar1p5_1x.jpg" alt="Silhouette of a climber on a steep overhanging wall.">
+          </picture>
+          <h2>Climber</h2>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <p>Climbing in the Sierras in California</p>
+        </article>
+      </section>
+
+      <aside> <!-- for more random info that doesn't fit in the section layout -->
+        <article class="news">
+          <h3 class="headline-title">News One</h3>
+          <p>This is an aside box and we can have elements in here. This is an aside box and we can have elements in here. This is an aside box and we can have elements in here.</p>
+        </article>
+        <article class="news">
+          <h3 class="headline-title">News Two</h3>
+          <p>This is an aside box and we can have elements in here</p>
+        </article>
+        <article class="news">
+          <h3 class="headline-title">News Three</h3>
+          <p>This is an aside box and we can have elements in here</p>
+        </article>
+        <article class="news">
+          <h3 class="headline-title">News Four</h3>
+          <p>This is an aside box and we can have elements in here</p>
+        </article>
+        <article class="news">
+          <h3 class="headline-title">News Five</h3>
+          <p>This is an aside box and we can have elements in here. This is an aside box and we can have elements in here. This is an aside box and we can have elements in here.</p>
+        </article>
+      </aside>
+
+      <footer> <!--footer for extra info -->
+        <article>
+          <h3 class="footer-title">Contact</h3>
+          <p>Space filler for footer content you can see how it flows so things will look nicely.</p>
+        </article>
+        <article>
+          <h3 class="footer-title">Social</h3>
+          <span>
+            <a href="#" class="zocial-facebook"></a>
+            <a href="#" class="zocial-twitter"></a>
+            <a href="#" class="zocial-googleplus"></a>
+          </span>
+        </article>
+        <article>
+          <h3 class="footer-title">Address</h3>
+          <p>Space filler for footer content you can see how it flows so things will look nicely.</p>
+        </article>
+      </footer>
+    </div>
+  </body>
+</html>

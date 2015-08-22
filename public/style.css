@@ -1,0 +1,312 @@
+/* setup for box sizing */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Zocial icons */
+[class*="zocial-"]:before {
+  font-family: "zocial", sans-serif;
+  padding: 0.3em;
+  font-size: 2.2em;
+}
+
+[class*="zocial"] {
+  text-decoration: none;
+  color: hsl(220, 50%, 50%);
+}
+
+/* defaults */
+body {
+  font-size: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #555;
+}
+
+body {
+  margin-top: 0;
+}
+
+p {
+  text-align: justify;
+  margin: 0.1em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.work,
+.splash {
+  box-shadow: 0 0.3em 0.3em hsl(220, 50%, 40%); /*, 0 -0.2em 0.3em hsl(60, 50%, 60%), 0.2em 0 0.3em hsl(120, 50%, 40%), -0.2em 0 0.3em hsl(120, 50%, 40%); fancy outline that didn't look great */
+  border: 1px solid #777;
+}
+
+a {
+  font-size: 1.0em;
+  overflow: auto;
+  color: #777;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* header */
+nav {
+  min-height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: hsl(220, 80%, 90%);
+  border: 0.1em solid hsl(220, 50%, 70%);
+  border-radius: 0 0 0.3em 0.3em;
+}
+
+.nav-close,
+.nav-open {
+  max-height: 40px;
+  padding: 0.1em;
+
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav.mobile {
+  justify-content: space-between;
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  display: none; /* then hide it */
+}
+
+
+.menu-item {
+  width: 100%;
+  margin: 0.1em;
+  padding: 0.5em 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(220, 50%, 50%);
+}
+
+.menu-item:hover {
+  color: white;
+  background-color: hsl(220, 50%, 50%);
+}
+
+.menu-item:nth-child(2):hover {
+  background-color: hsl(120, 50%, 50%);
+}
+
+.menu-item:nth-child(3):hover {
+  background-color: hsl(0, 50%, 50%);
+}
+
+.menu-item:nth-child(4):hover {
+  color: hsl(220, 50%, 50%);
+  background-color: hsl(60, 90%, 50%);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.0em;
+}
+
+.logo {
+  height: 9em;
+}
+
+.title,
+.sub-title {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.splash {
+  width: 100%;
+}
+
+
+/* main section with mobile sizing first */
+footer,
+section,
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+article h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+aside {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #eee;
+  background-color: hsl(120, 80%, 90%);
+  border: 0.1em solid hsl(120, 50%, 70%);
+  border-radius: 0.3em;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.footer-title,
+.headline-title {
+  text-transform: uppercase;
+  padding-bottom: 0.2em;
+  margin-bottom: 0;
+  width: 100%;
+  border-bottom: 3px solid #777;
+}
+
+.headline-title {
+  border-color: hsl(120, 50%, 70%);
+}
+
+.footer-title {
+  border-color: hsl(220, 50%, 70%);
+}
+
+.news {
+  flex-flow: column wrap;
+  align-items: flex-start;
+  text-align: justify;
+  width: 100%;
+  padding: 0.3em;
+}
+
+footer {
+  padding: 1em;
+  width: 100%;
+  background-color: hsl(220, 80%, 90%);
+  border: 0.1em solid hsl(220, 50%, 70%);
+  border-radius: 0.3em;
+}
+
+
+/* break points for responsiveness */
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .sub-title,
+  .title {
+    text-align: right;
+  }
+
+  article {
+    width: 49%;
+  }
+
+  .news {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1.0em;
+  }
+
+  .nav.mobile {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+  }
+
+  .menu-item {
+    width: 20%;
+    text-align: center;
+  }
+
+  article {
+    width: 32%;
+  }
+
+  section {
+    width: 75%;
+  }
+
+  aside {
+    width: 24%;
+    margin-top: -15em; /* make the box slide up partial obscure the splash */
+    opacity: 0.8;
+    transition: margin-top 0.5s ease;
+  }
+
+  .news {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+}
+
